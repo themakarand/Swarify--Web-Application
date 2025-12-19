@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+  Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #logo_img img{
+      
+            height: 100px; 
+            width: 100px; 
+            border-radius: 50%; 
+            object-fit: cover;"
+    }
+    #logo_img{
+      
+           margin-left: 45%;
+           margin-top: 50px;
+           margin-bottom: 50px;
+
+    }
+  </style>
+  <link rel="icon" type="img/x-icon" href="logo.jpeg">
+</head>
+<body style="background-color: lightblue;">
+  <div id="logo_img">
+   <img src="logo.jpeg" 
+    >
+            </div>
+  <div class="auth-container">
+    <h2>Login</h2>
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button id="reg" type="button" onclick="login()">Login</button>
+    <p>Don't have an account? <a href="register.html">Register</a></p>
+  </div>
+
+ <script src="js/auth.js"></script>
+</body>
+</html>

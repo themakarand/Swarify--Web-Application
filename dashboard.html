@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="img/x-icon" href="logo.jpeg">
+</head>
+<body>
+
+<div id="dashboard">
+
+ <header class="hd">
+  <!-- LEFT -->
+  <div class="hd-left">
+    <img src="logo.jpeg" class="logo">
+  </div>
+
+  <!-- CENTER -->
+  <div class="hd-center">
+    <input id="search" placeholder="Search songs...">
+  </div>
+
+  <!-- RIGHT -->
+  <div class="hd-right">
+  <div class="profile-wrapper">
+    <a href="liked.html" class="liked-btn">❤️ Liked Songs</a>
+
+    <span class="profile-icon" onclick="toggleProfile()">👤</span>
+
+    <div id="profileMenu" class="profile-menu">
+      <p id="profileName"></p>
+      <p id="profileEmail"></p>
+      <hr>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+  <!-- SONG GRID -->
+  <div id="songs" class="songs-grid" style="background-color: lightblue;">
+
+
+</div>
+
+<script>
+  const user = localStorage.getItem("loggedInUser");
+  if (!user) {
+    window.location.href = "index.html";
+  }
+</script>
+
+<div id="playerModal" class="player-modal">
+  <span class="close-btn" onclick="closePlayer()">✖</span>
+
+  <img id="playerCover">
+  <h3 id="playerTitle"></h3>
+  <p id="playerArtist"></p>
+  <h3 id="playerTitle"></h3>
+<p id="playerArtist"></p>
+
+<span id="likeBtn" onclick="toggleLike()" class="like-btn">🤍</span>
+
+  <div class="controls">
+    <button onclick="prevSong()">⏮</button>
+    <button onclick="togglePlay()">▶</button>
+    <button onclick="nextSong()">⏭</button>
+  </div>
+
+  <!-- NEW -->
+  <div class="progress-container">
+    <span id="currentTime">0:00</span>
+    <input type="range" id="progress" value="0" min="0" max="100">
+    <span id="duration">0:00</span>
+  </div>
+</div>
+
+
+<script src="js/auth.js"></script>
+<script>protectDashboard();</script>
+<script src="js/profile.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/player.js"></script>
+</body>
+</html>

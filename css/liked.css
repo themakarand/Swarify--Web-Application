@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #b7e1ee;
+}
+
+/* HEADER */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #87ceeb;
+}
+
+.top-bar button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  background: #1db954;
+  color: white;
+  cursor: pointer;
+}
+
+/* SONG GRID */
+.songs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.song-card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.song-card:hover {
+  transform: scale(1.05);
+}
+
+.song-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.song-title {
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.song-artist {
+  font-size: 14px;
+  color: gray;
+}
+
+/* PLAYER */
+.player-modal {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 420px;
+  background: #222;
+  color: white;
+  padding: 20px;
+  display: none;
+}
+
+.player-modal.show {
+  display: block;
+}
+
+.player-modal img {
+  width: 120px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.controls button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 50%;
+  background: #1db954;
+  color: white;
+  cursor: pointer;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#progress {
+  flex: 1;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Liked Songs</title>
+  <link rel="stylesheet" href="css/liked.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-bar">
+  <h2>❤️ Liked Songs</h2>
+  <button onclick="goBack()">⬅ Back</button>
+</header>
+
+<!-- SONG LIST -->
+<div id="likedSongs" class="songs-grid"></div>
+
+<!-- PLAYER MODAL (reuse same player UI) -->
+<div id="playerModal" class="player-modal">
+  <span class="close-btn" onclick="closePlayer()">✖</span>
+
+  <img id="playerCover">
+  <h3 id="playerTitle"></h3>
+  <p id="playerArtist"></p>
+
+  <div class="controls">
+    <button onclick="prevSong()">⏮</button>
+    <button onclick="togglePlay()">▶</button>
+    <button onclick="nextSong()">⏭</button>
+  </div>
+
+  <div class="progress-container">
+    <span id="currentTime">0:00</span>
+    <input type="range" id="progress" min="0" max="100" value="0">
+    <span id="duration">0:00</span>
+  </div>
+</div>
+
+<script src="js/liked.js"></script>
+</body>
+</html>
