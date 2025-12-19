@@ -1,10 +1,10 @@
 const songs = [
  { name: "For A Reason", artist: "Karan Aujla", img: "covers/cover2.jpg", src: "songs/song2.mp3" },
  {name :"Sapphire",artist:"Ed Sheeran", img:"covers/cover1.jpg", src:"songs/song1.mp3"},
- {name:"Sharat",artist:"jasmine sandlas",img:"covers/cover50.jpg",src:"songs/Shararat Dhurandhar 128 Kbps.mp3"},
+ {name:"Sharaat",artist:"jasmine sandlas",img:"covers/cover50.jpg",src:"songs/Shararat Dhurandhar 128 Kbps.mp3"},
  { name: "Wavy", artist: "Karan Aujla", img: "covers/cover4.jpg", src: "songs/song12.mp3" },
  { name:"Dhurandhar Title Track", artist: "Karan Aujla", img: "covers/cover5.jpg", src: "songs/Title Track Dhurandhar 128 Kbps.mp3" },
-  { name: "Chammak Challo", artist: "Akon", img: "covers/cover51.jpg", src: "songs/Chammak Challo Ra One 128 Kbps.mp3" },
+ { name: "Chammak Challo", artist: "Akon", img: "covers/cover51.jpg", src: "songs/Chammak Challo Ra One 128 Kbps.mp3" },
  { name: "Winning Speech", artist: "Karan Aujla", img: "covers/cover10.jpg", src: "songs/song10.mp3" },
  { name: "One Love", artist: "Shubh", img: "covers/cover11.jpg", src: "songs/One Love Shubh 128 Kbps.mp3" },
  {name :"Laila main Laila",artist:"Pawni Pandey", img:"covers/cover6.jpg", src:"songs/Laila Main Laila.mp3"},
@@ -75,5 +75,6 @@ searchInput.addEventListener("input", () => {
 });
 
 loadSongs();
+
 
 
