@@ -1,7 +1,7 @@
 const songs = [
  { name: "For A Reason", artist: "Karan Aujla", img: "covers/cover2.jpg", src: "songs/song2.mp3" },
  {name :"Sapphire",artist:"Ed Sheeran", img:"covers/cover1.jpg", src:"songs/song1.mp3"},
- // {name:"Dhurandhar Title Track",artist:"Humankind",img:"covers/cover3.jpg",src:"songs/Title Track Dhurandhar 128 Kbps.mp3"},
+ {name:"Sharat",artist:"jasmine sandlas",img:"covers/cover50.jpg",src:"songs/Shararat Dhurandhar 128 Kbps.mp3"},
  { name: "Wavy", artist: "Karan Aujla", img: "covers/cover4.jpg", src: "songs/song12.mp3" },
  { name:"Dhurandhar Title Track", artist: "Karan Aujla", img: "covers/cover5.jpg", src: "songs/Title Track Dhurandhar 128 Kbps.mp3" },
  
@@ -75,3 +75,4 @@ searchInput.addEventListener("input", () => {
 });
 
 loadSongs();
+
