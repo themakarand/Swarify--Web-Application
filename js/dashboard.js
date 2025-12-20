@@ -25,6 +25,7 @@ const songs = [
 {name :"Love Dose",artist:"Honey Singh", img:"covers/cover30.jpg", src:"songs/Love Dose Desi Kalakaar 128 Kbps.mp3"},
 {name :"Brown Rang",artist:"Honey Singh", img:"covers/cover31.jpg", src:"songs/Brown Rang International Villager 128 Kbps.mp3"},
 {name :"Mere Rashke Qamar",artist:"Rahat Fateh Ali Khan", img:"covers/cover32.jpg", src:"songs/Mere Rashke Qamar Baadshaho 128 Kbps.mp3"},
+{name :"Afgan Jalebi",artist:"Asrar", img:"covers/cover52.jpg", src:"songs/Afghan Jalebi Ya Baba Phantom 128 Kbps.mp3"},
 
 {name :"Gali Gali",artist:"Neha Kakkar", img:"covers/cover37.jpg", src:"songs/Gali Gali.mp3"},
 {name :"O Jaana Na Jaana",artist:"Kumar Sanu,Lata Mangeshkar", img:"covers/cover39.jpg", src:"songs/O Jaana Na Jaana Part 1 Jab Pyaar Kisise Hota Hai 128 Kbps.mp3"},
@@ -75,6 +76,7 @@ searchInput.addEventListener("input", () => {
 });
 
 loadSongs();
+
 
 
 
