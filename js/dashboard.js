@@ -26,6 +26,12 @@ const songs = [
 {name :"Brown Rang",artist:"Honey Singh", img:"covers/cover31.jpg", src:"songs/Brown Rang International Villager 128 Kbps.mp3"},
 {name :"Mere Rashke Qamar",artist:"Rahat Fateh Ali Khan", img:"covers/cover32.jpg", src:"songs/Mere Rashke Qamar Baadshaho 128 Kbps.mp3"},
 {name :"Afgan Jalebi",artist:"Asrar", img:"covers/cover52.jpg", src:"songs/Afghan Jalebi Ya Baba Phantom 128 Kbps.mp3"},
+{name :"Ishq Jalakar Karvaan",artist:"Shashwat Sachdev", img:"covers/cover55.jpg", src:"songs/Ishq Jalakar Dhurandhar 128 Kbps.mp3"},
+{name :"Chikiri Chikiri",artist:"Mohit Chauhan", img:"covers/cover53.jpg", src:"songs/Chikiri Chikiri Peddi 128 Kbps.mp3"},
+{name :"kuchini MartaPetthi",artist: "Sahithi Chaganti and Sri Krishna", img:"covers/cover54.jpg", src:"songs/Kurchi Madathapetti Guntur Kaaram 128 Kbps.mp3"},
+{name :"Dil Meri Na Sune",artist:"Atif Aslam", img:"covers/cover58.jpg", src:"songs/Dil Meri Na Sune(KoshalWorld.Com).mp3"},
+{name :"Malang",artist: "Ved Sharma", img:"covers/cover56.jpg", src:"songs/Malang (PenduJatt.Com.Se).mp3"},
+{name :"Ek Dil Ek Jann",artist:"Shivam Pathak", img:"covers/cover57.jpg", src:"songs/Ek Dil Ek Jaan Padmaavat 128 Kbps.mp3"},
 
 {name :"Gali Gali",artist:"Neha Kakkar", img:"covers/cover37.jpg", src:"songs/Gali Gali.mp3"},
 {name :"O Jaana Na Jaana",artist:"Kumar Sanu,Lata Mangeshkar", img:"covers/cover39.jpg", src:"songs/O Jaana Na Jaana Part 1 Jab Pyaar Kisise Hota Hai 128 Kbps.mp3"},
@@ -76,6 +82,7 @@ searchInput.addEventListener("input", () => {
 });
 
 loadSongs();
+
 
 
 
