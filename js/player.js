@@ -1,5 +1,10 @@
-let currentIndex = 0;
 const audio = new Audio();
+let currentIndex = 0;
+
+audio.addEventListener("ended", () => {
+  playNextSong();
+});
+
 
 /* PROGRESS ELEMENTS */
 const progress = document.getElementById("progress");
@@ -107,6 +112,18 @@ function toggleLike() {
     btn.classList.add("liked");
   }
 
+  function playNextSong() {
+  currentIndex++;
+
+  if (currentIndex >= songs.length) {
+    currentIndex = 0; // loop back to first song
+  }
+
+  openPlayer(currentIndex);
+}
+
+
   localStorage.setItem("likedSongs", JSON.stringify(likedSongs));
 }
+
 
